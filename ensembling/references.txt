@@ -1,0 +1,2 @@
+followed the algorithm from the book "Artificial Intelligence A Modern Approach (third edition) by Stuart Russel and Peter Norvig"
+all code is of my own.
