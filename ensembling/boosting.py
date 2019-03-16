@@ -5,7 +5,7 @@ import random
 
 PRINT = True
 
-###### DON'T CHANGE THE SEEDS ##########
+
 random.seed(42)
 np.random.seed(42)
 
@@ -35,7 +35,7 @@ class AdaBoostClassifier:
         """
         
         self.features = trainingData[0].keys()
-        "*** YOUR CODE HERE ***"
+        
         size_sampled_data = int(len(trainingData))
         sampled_weights = [(1.0/size_sampled_data)] * size_sampled_data
         
@@ -74,7 +74,7 @@ class AdaBoostClassifier:
         The function should return a list of labels where each label should be one of legaLabels.
         """
 
-        "*** YOUR CODE HERE ***"
+        
         prediction = []
         for i in range(len(data)):
             guesses = []
