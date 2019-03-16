@@ -37,9 +37,7 @@ class PerceptronClassifier:
 		self.type = "perceptron"
 		self.max_iterations = max_iterations
 
-		##################IMPORTANT######################
-		# The self.weights is just one instance of Counter unlike last time
-		#################################################
+		
 		self.weights = util.Counter()
 
 	def setWeights(self, weights):
