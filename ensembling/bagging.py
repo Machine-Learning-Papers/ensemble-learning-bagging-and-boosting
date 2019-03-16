@@ -5,7 +5,6 @@ import random
 
 PRINT = True
 
-###### DON'T CHANGE THE SEEDS ##########
 random.seed(42)
 np.random.seed(42)
 
@@ -31,7 +30,7 @@ class BaggingClassifier:
         """
 
         self.features = trainingData[0].keys()
-        "*** YOUR CODE HERE ***"
+        
         sample_size = int(self.ratio * len(trainingData))
         for i in range(self.num_classifiers):
             random_integers = np.random.randint(len(trainingData), size = sample_size)
@@ -59,7 +58,7 @@ class BaggingClassifier:
         The function should return a list of labels where each label should be one of legaLabels.
         """
 
-        "*** YOUR CODE HERE ***"
+       
         prediction = []
         for i in range(len(data)):
             guesses = []
